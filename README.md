@@ -1,3 +1,7 @@
+# forked
+
+to have is_opened check to prevent showing multiple notifications.
+
 # toastr
 **toastr** is a Javascript library for Gnome / Growl type non-blocking notifications. jQuery is required. The goal is to create a simple core library that can be customized and extended.
 
