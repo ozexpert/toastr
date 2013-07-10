@@ -106,7 +106,16 @@
 							$container.remove();
 						});
 					}
-				};
+				},
+				is_opened = function($toastElement){
+                    			var options = getOptions();
+                    			var $container = $('#' + options.containerId);
+                    			if($container.length){
+                        			return true;
+                    			} else {
+                        			return false;
+                    		};
+                };
 
 			var toastr = {
 				clear: clear,
@@ -117,7 +126,8 @@
 				subscribe: subscribe,
 				success: success,
 				version: version,
-				warning: warning
+				warning: warning,
+				is_opened: is_opened
 			};
 
 			return toastr;
